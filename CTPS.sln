@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPSConnectionManager", "TPSConnectionManager\TPSConnectionManager.csproj", "{5390380B-0760-4D7F-8CD2-B7AF6D5E1577}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D7AEDA81-D19D-4F6D-BDD0-C1D4B2EB8CBB}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogConfigLayer", "LogConfigLayer\LogConfigLayer.csproj", "{C876F1D9-D39F-4461-A5C0-C30A81BFDD4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PScripts", "PScripts", "{E62387D6-10F1-4389-8FD6-E85A9364AD4B}"
+	ProjectSection(SolutionItems) = preProject
+		PScripts\GODeploy.ps1 = PScripts\GODeploy.ps1
+		PScripts\SetNugetVersion.ps1 = PScripts\SetNugetVersion.ps1
+		PScripts\SetVersion.ps1 = PScripts\SetVersion.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonContracts", "CommonContract\CommonContracts.csproj", "{EF860514-7AE1-4FE0-A6C3-4CE45EA73820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semafone", "Semafone\Semafone.csproj", "{B0961462-1DA1-46C1-82EC-70E78A25E727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenesysCoreServers", "GenesysCoreServers\GenesysCoreServers.csproj", "{A6093E74-A290-4E6C-AE88-91A13566A177}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5390380B-0760-4D7F-8CD2-B7AF6D5E1577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5390380B-0760-4D7F-8CD2-B7AF6D5E1577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5390380B-0760-4D7F-8CD2-B7AF6D5E1577}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5390380B-0760-4D7F-8CD2-B7AF6D5E1577}.Debug|x64.Build.0 = Debug|Any CPU
+		{5390380B-0760-4D7F-8CD2-B7AF6D5E1577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5390380B-0760-4D7F-8CD2-B7AF6D5E1577}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5390380B-0760-4D7F-8CD2-B7AF6D5E1577}.Release|x64.ActiveCfg = Release|Any CPU
+		{C876F1D9-D39F-4461-A5C0-C30A81BFDD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C876F1D9-D39F-4461-A5C0-C30A81BFDD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C876F1D9-D39F-4461-A5C0-C30A81BFDD4E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C876F1D9-D39F-4461-A5C0-C30A81BFDD4E}.Debug|x64.Build.0 = Debug|Any CPU
+		{C876F1D9-D39F-4461-A5C0-C30A81BFDD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C876F1D9-D39F-4461-A5C0-C30A81BFDD4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C876F1D9-D39F-4461-A5C0-C30A81BFDD4E}.Release|x64.ActiveCfg = Release|Any CPU
+		{EF860514-7AE1-4FE0-A6C3-4CE45EA73820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF860514-7AE1-4FE0-A6C3-4CE45EA73820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF860514-7AE1-4FE0-A6C3-4CE45EA73820}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF860514-7AE1-4FE0-A6C3-4CE45EA73820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF860514-7AE1-4FE0-A6C3-4CE45EA73820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF860514-7AE1-4FE0-A6C3-4CE45EA73820}.Release|x64.ActiveCfg = Release|Any CPU
+		{B0961462-1DA1-46C1-82EC-70E78A25E727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0961462-1DA1-46C1-82EC-70E78A25E727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0961462-1DA1-46C1-82EC-70E78A25E727}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B0961462-1DA1-46C1-82EC-70E78A25E727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0961462-1DA1-46C1-82EC-70E78A25E727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0961462-1DA1-46C1-82EC-70E78A25E727}.Release|x64.ActiveCfg = Release|Any CPU
+		{A6093E74-A290-4E6C-AE88-91A13566A177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6093E74-A290-4E6C-AE88-91A13566A177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6093E74-A290-4E6C-AE88-91A13566A177}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A6093E74-A290-4E6C-AE88-91A13566A177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6093E74-A290-4E6C-AE88-91A13566A177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6093E74-A290-4E6C-AE88-91A13566A177}.Release|x64.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

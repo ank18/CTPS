@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{596A22E2-1B7B-491D-88C2-B295C45E7706}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Softphone</RootNamespace>
+    <AssemblyName>Softphone</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\TPSConnectionManager\bin\Debug\ConnectToApplicatons\Softphone\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Genesyslab.Core, Version=8.1.100.12, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Broker, Version=8.1.100.14, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.ApplicationBlocks.Commons.Broker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.Commons.Protocols, Version=8.1.100.16, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.ApplicationBlocks.Commons.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel, Version=8.1.100.14, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.ApplicationBlocks.ConfigurationObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.ApplicationBlocks.WarmStandby, Version=8.1.100.15, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.ApplicationBlocks.WarmStandby.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons, Version=8.1.100.12, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Commons.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections, Version=8.1.100.4, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Commons.Collections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Collections.Binding, Version=8.1.100.4, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Commons.Collections.Binding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Connection, Version=8.1.100.12, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Commons.Connection.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Commons.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Commons.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Configuration.Protocols, Version=8.1.100.14, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Configuration.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Contacts.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Contacts.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Logging, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Management.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Management.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.OpenMedia.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.OpenMedia.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Outbound.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Outbound.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Reporting.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Reporting.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Routing.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Routing.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.SwitchPolicy, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.SwitchPolicy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.Voice.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.Voice.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.WebMedia.Protocols, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.WebMedia.Protocols.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genesyslab.Platform.WebMedia.Protocols.EspEmail, Version=8.1.100.13, Culture=neutral, PublicKeyToken=2248646200015f60, processorArchitecture=MSIL">
+      <HintPath>..\packages\BSKYB.Genesys.Platform.SDK.8.1.1\lib\net20\Genesyslab.Platform.WebMedia.Protocols.EspEmail.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientRequest.cs" />
+    <Compile Include="Model\AgentConnection.cs" />
+    <Compile Include="Model\CmeCode.cs" />
+    <Compile Include="Model\Enums.cs" />
+    <Compile Include="Model\ErrorResponse.cs" />
+    <Compile Include="Model\Handset.cs" />
+    <Compile Include="Model\SemafoneHandset.cs" />
+    <Compile Include="Model\TransferOption.cs" />
+    <Compile Include="SipServer.cs" />
+    <Compile Include="SoftphoneConnection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonContract\CommonContracts.csproj">
+      <Project>{ef860514-7ae1-4fe0-a6c3-4ce45ea73820}</Project>
+      <Name>CommonContracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogConfigLayer\LogConfigLayer.csproj">
+      <Project>{c876f1d9-d39f-4461-a5c0-c30a81bfdd4e}</Project>
+      <Name>LogConfigLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Softphone.dll.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
