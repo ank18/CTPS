@@ -15,7 +15,7 @@ namespace Semafone
 {
     public class Semafone
     {
-        
+        private string deleteme;
         private ISystemClient _systemClient = new SystemClientHttp();
         private ITelephonyClient _telephonyClient = new TelephonyClientHttp();
         private ISemafoneClientSession ClientSession { get; set; }
